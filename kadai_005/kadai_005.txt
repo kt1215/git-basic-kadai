@@ -6,22 +6,23 @@ PS C:\de_training> mkdir git_challenge
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----        2025/06/06      0:10                git_challenge
+d-----        2025/06/06      0:19                git_challenge
 
 
-PS C:\de_training> echo "Hello, world!" > hello_world.txt
-PS C:\de_training> git init
-Initialized empty Git repository in C:/de_training/.git/
-PS C:\de_training> git add .\hello_world.txt
-PS C:\de_training> git commit -m "hello_world.txtを追加"
-[main (root-commit) 56a6ae7] hello_world.txtを追加
+PS C:\de_training> cd .\git_challenge\
+PS C:\de_training\git_challenge> git init
+Initialized empty Git repository in C:/de_training/git_challenge/.git/
+PS C:\de_training\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\de_training\git_challenge> git add .\hello_world.txt
+PS C:\de_training\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 4085e5b] hello_world.txtを追加
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
-PS C:\de_training> echo "こんにちは、世界！" > hello_world.txt
-PS C:\de_training> git add .\hello_world.txt
-PS C:\de_training> git commit -m "日本語訳を追記"
-[main b353dc6] 日本語訳を追記
+PS C:\de_training\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\de_training\git_challenge> git add .\hello_world.txt
+PS C:\de_training\git_challenge> git commit -m "日本語訳を追記"
+[main 427d47f] 日本語訳を追記
  1 file changed, 0 insertions(+), 0 deletions(-)
-PS C:\de_training> git log --oneline
-b353dc6 (HEAD -> main) 日本語訳を追記
-56a6ae7 hello_world.txtを追加
+PS C:\de_training\git_challenge> git log --oneline
+427d47f (HEAD -> main) 日本語訳を追記
+4085e5b hello_world.txtを追加
