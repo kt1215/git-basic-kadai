@@ -1,0 +1,15 @@
+PS C:\Users> cd C:\de_training\git_challenge
+PS C:\de_training\git_challenge> git init
+Initialized empty Git repository in C:/de_training/git_challenge/.git/
+PS C:\de_training\git_challenge> git add .
+PS C:\de_training\git_challenge> git commit -m "first commit"
+[main (root-commit) a4424f2] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\de_training\git_challenge> git add .
+PS C:\de_training\git_challenge> git commit -m "second commit"
+[main e8c8644] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\de_training\git_challenge> git log --oneline
+e8c8644 (HEAD -> main) second commit
+a4424f2 first commit
